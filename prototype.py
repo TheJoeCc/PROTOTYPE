@@ -25,8 +25,9 @@ def main():
     desviacion = np.std(datos)
 
     print("\n Resultados:")
+     print(f"Desviación estándar: {desviacion:.4f}")
     print(f"Media aritmética: {media:.4f}")
-    print(f"Desviación estándar: {desviacion:.4f}")
+   
 
     # Graficar la campana de Gauss
     x = np.linspace(min(datos) - 3*desviacion, max(datos) + 3*desviacion, 500)
@@ -42,4 +43,5 @@ def main():
     plt.show()
 
 if __name__ == "__main__":
+
     main()
